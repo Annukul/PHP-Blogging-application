@@ -1,0 +1,552 @@
+   /* font-family: 'Baloo 2', cursive;
+    font-family: 'Quicksand', sans-serif;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    display: inline-block;
+}
+
+/* BLACK */
+.black {
+    width: 100%;
+    height: 20px;
+    background-color: black;
+    color: white;
+    font-family: 'Baloo 2', cursive;
+    display: flex;
+    flex-direction: row;
+}
+.black_p {
+    font-family: 'Quicksand', sans-serif;
+}
+.logout-form {
+    margin-left: 1000px;
+    cursor: pointer;
+}
+
+.nav {
+    background: url('../images/mn.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    color: black;
+}
+.nav-small {
+    background: url('../images/mn.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80px;
+    width: 100%;
+    color: black;
+}
+.nav-ul {
+    padding: 20px 0px 0px 0px;
+    font-family: 'Baloo 2', cursive;
+    font-size: 18px;
+}
+.nav-ul li {
+    padding-left: 80px;
+}
+.nav-ul li a {
+    transition: color 0.1s ease;
+}
+.nav-ul li a:hover {
+    color: purple;
+    border-bottom: 2px solid purple;
+}
+.nav-ul .new-post {
+    margin-left: 200px;
+    border: 2px solid white;
+    padding: 4px 6px 4px 6px;
+    transition: all 0.6s ease;
+}
+.new-post:hover {
+    background-color: white;
+}
+
+.form {
+    float: right;
+    margin-top: -40px;
+    margin-right: 20px;
+}
+.input {
+    border: none;
+    border-radius: 2px;
+    padding: 10px 30px 7px 6px;
+}
+.sbt-btn {
+    border: 2px solid white;
+    background: transparent;
+    padding: 4px 6px 4px 6px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+.sbt-btn:hover {
+    background-color: white;
+}
+
+/* NAV_EX */
+.link {
+    background: url('../images/cactus.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Baloo 2', cursive;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+    width: 100%;
+    height: 566px;
+    cursor: pointer;
+}
+.latest_post {
+    color: black;
+}
+.latest_post_btn {
+    transition: all 0.4s ease;
+}
+.latest_post_btn:hover {
+    color: purple;
+}
+
+/* MAIN BODY */
+.posts {
+    width: 100%;
+    height: auto;
+    padding: 20px 0px 20px 0px;
+    display: flex;
+    flex-direction: row;
+}
+.left {
+    display: flex;
+    flex-direction: column;
+}
+.post {
+    font-family: 'Baloo 2', cursive;
+    border: 1px solid purple;
+    background-color: grey;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 7; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    width: 500px;
+    height: auto;
+    padding: 10px 5px 10px 5px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 3px;
+    position: relative;
+    left: 40px;
+    top: 20px;
+    margin-bottom: 20px;
+    transition: all 0.6s ease;
+}
+.post:hover {
+    box-shadow: 10px 10px 5px 5px #EAF0F1;
+}
+.post-head {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+.view-post {
+  color: black;
+  margin-top: 40px;
+  margin-left: 180px;
+  font-family: 'Quicksand', sans-serif;
+  text-decoration: none;
+  transition: all 0.1s ease;
+}
+.view-post:hover {
+  color: purple;
+  border-bottom: 1px solid purple;
+}
+
+/* FOOTER */
+.footer {
+    background: url('../images/sunflower.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 45vh;
+    border-top: 5px solid purple;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+}
+.footer a {
+    color: white;
+}
+.footer-ul {
+    padding: 20px 0px 0px 0px;
+    font-family: 'Baloo 2', cursive;
+    font-size: 18px;
+}
+.footer-ul li {
+    padding-left: 80px;
+    display: block;
+}
+.footer-ul li a {
+    transition: color 0.1s ease;
+}
+.footer-ul li a:hover {
+    color: purple;
+    border-bottom: 2px solid purple;
+}
+.footer-ul .footer-new-post {
+    width:110px;
+    margin-left: 50px;
+    margin-top: 30px;
+    border: 2px solid white;
+    padding: 4px 6px 4px 6px;
+    transition: all 0.6s ease;
+}
+.footer-new-post:hover {
+    background-color: white;
+}
+
+.footer-form {
+    float: right;
+    margin-right: 20px;
+}
+.input {
+    border: none;
+    border-radius: 2px;
+    padding: 10px 30px 7px 6px;
+}
+.footer-sbt-btn {
+    border: 2px solid white;
+    background: transparent;
+    padding: 4px 6px 4px 6px;
+    font-size: 17px;
+    cursor: pointer;
+    color: white;
+    transition: all 0.6s ease;
+}
+.footer-sbt-btn:hover {
+    background-color: white;
+    color: purple;
+}
+.copyright {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+/* ------------------- ABOUT CSS -------------------- */
+.about-h1 {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    font-family: 'Quicksand', sans-serif;
+    background-color: honeydew;
+}
+.about-inside {
+    width: 800px;
+    padding: 20px 30px 20px 30px;
+    position: relative;
+    left: 220px;
+    border: 1px solid gainsboro;
+    border-left: 5px solid purple;
+    border-right: 5px solid purple;
+    border-radius: 3px;
+}
+.about hr {
+    margin-top: 100px;
+    width: 400px;
+    margin-left: 430px;
+    margin-bottom: 100px;
+}
+
+
+.mytravels-h1 {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.my-travels {
+    display: flex;
+    flex-direction: column;
+}
+.up {
+    display: flex;
+    justify-content: space-evenly;
+}
+.img-one,
+.img-two,
+.img-three,
+.img-four,
+.img-five,
+.img-six {
+    display: flex;
+    flex-direction: column;
+}
+.down {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.span a {
+    margin-top: 5px;
+}
+.span a:hover {
+    color: purple;
+    border-bottom: 2px solid purple;
+}
+
+/* ------------------------ TRAVELS CSS ---------------------- */
+.main-conatiner {
+    display: flex;
+    flex-direction: column;
+}
+.main-1,
+.main-2,
+.main-3 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.main-h1 {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+.inside-cont-one {
+    position: relative;
+    width: 360px;
+}
+.image {
+    cursor: pointer;
+    opacity: 1;
+    display: block;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
+.middle {
+    opacity: 0;
+    transition: 0.5 ease;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.inside-cont-one:hover .image {
+    opacity: 0.3;
+}
+.inside-cont-one:hover .middle {
+    opacity: 1;
+}
+.text {
+    width: auto;
+    color: purple;
+    border-bottom: 2px purple;
+}
+.text a {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color: purple;
+    border-bottom: 2px purple;
+}
+
+/* ------------------------------- CREATE POST CSS -------------------------*/
+.form-cont {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'Quicksand', sans-serif;
+    position: relative;
+    left: 360px;
+}
+.cancel-create {
+    border: 1px solid gainsboro;
+    background-color: rgb(120, 184, 204);
+    padding: 12px 24px;
+    margin-top: 30px;
+    margin-left: 200px;
+    font-size: 16px;
+    position: relative;
+    left: 570px;
+    bottom: 120px;
+    width: 110px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+.form-h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.cols {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.input {
+    border: 2px solid gainsboro;
+    transition: all 0.3s ease;
+}
+.input:hover {
+    border: 2px solid purple;
+}
+.submit-btn {
+    border: 1px solid gainsboro;
+    background-color: honeydew;
+    padding: 12px 24px;
+    margin-top: 30px;
+    margin-left: 200px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+.submit-btn:hover {
+    background-color: rgb(191, 206, 191);
+}
+.new-author {
+  border: 1px solid gainsboro;
+  background-color: plum;
+  padding: 12px 24px;
+  margin-top: 20px;
+  margin-left: 180px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+.new-author:hover {
+  background-color: rgb(191, 206, 191);
+}
+
+/* ------------------------- FULL POST PAGE ----------------- */
+.full-post {
+    display: flex;
+    width: auto;
+    height: auto;
+    font-family: 'Quicksand', sans-serif;
+    background-color: honeydew;
+    padding-bottom: 30px;
+}
+.full-post-inside {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    padding: 20px 30px 20px 30px;
+    position: relative;
+    left: 20px;
+    top: 10px;
+    border: 1px solid gainsboro;
+    border-left: 5px solid purple;
+    border-right: 5px solid purple;
+    border-radius: 3px;
+}
+hr {
+    margin-top: 100px;
+    width: 400px;
+    margin-left: 430px;
+    margin-bottom: 100px;
+}
+.full-post-author {
+  position: relative;
+  top: 10px;
+  right: 300px;
+}
+.edit-post-btn {
+    border: 2px solid black;
+    padding: 3px 6px 3px 6px;
+    color:black;
+    position: relative;
+    top: 14px;
+    width: 80px;
+    font-family: 'Baloo 2', cursive;
+    transition: all 0.6s ease;
+}
+.go-back-btn {
+    border: 2px solid black;
+    padding: 3px 6px 3px 6px;
+    color:black;
+    position: relative;
+    bottom: 12px;
+    width: 80px;
+    font-family: 'Baloo 2', cursive;
+    transition: all 0.6s ease;
+}
+.edit-post-btn:hover {
+    color: purple;
+    background-color: black;
+}
+.go-back-btn:hover {
+    color: purple;
+    background-color: black;
+}
+
+/* ----------------------- ADD COMMENTS --------------------- */
+.add-com {
+    height: 90vh;
+    font-family: 'Quicksand', sans-serif;
+}
+.add-com h2 {
+    margin-top: 100px;
+    margin-left: 180px;
+}
+.com-form {
+    width: 400px;
+    position: relative;
+    left: 80px;
+    top: 40px;
+}
+.com-btn {
+    margin-left: 120px;
+}
+   /* ---- COMMENTS INSIDE ---- */
+.com-inside {
+    width: 500px;
+    height: auto;
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 10px 10px 10px;
+    font-family: 'Baloo 2', cursive;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+.com-h3 {
+    font-family: 'Quicksand', sans-serif;
+    padding-bottom: 15px;
+    color: blue;
+}
+.com-h3 {
+    padding-bottom: 10px;
+}
+.com-h1 {
+    font-family: 'Quicksand', sans-serif;
+    padding-bottom: 35px;
+    text-align: center;
+    padding-top: 50px;
+}
